@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+
+<style>
+.survol{
+background-color:blue;
+}
+</style>
+<title>ToDo</title>
+</head>
+<body>
+
+<h1 style="text-align:center">Tâches à faire</h1>
+	<div class="container">
+
+	<div class="input-group mb-3" id="actionsTaches">
+	<label for="newTache" class="col-3">Nouvelle tâche</label>
+	<input type="text" id="newTache"  class="col-5"/>
+	<button class="btn btn-primary col-2"  id="ajoutTache" >
+	Add
+	</button>
+	<button class="btn btn-danger col-2" col-2 id="viderTaches" >
+	Vider
+	</button>
+	
+	<div class='alert alert-danger col-12' id="message">
+        <span class='glyphicon glyphicon-hand-right'></span> <strong>Veuillez saisir une tache</strong>
+    </div>
+    
+	</div>
+	
+	<div  >
+	<h2>Liste des taches</h2>
+	<ul class="list-group" id="listeTache">
+	
+	</ul>
+	</div>
+	
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
